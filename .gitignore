@@ -1,0 +1,39 @@
+# Backend (Django)
+backend/__pycache__/
+backend/api/__pycache__/
+backend/bayanai/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.log
+.env
+.env.*
+db.sqlite3
+media/
+staticfiles/
+backend/.env
+
+# Django migrations
+backend/api/migrations/
+backend/api/migrations/*.pyc
+backend/api/migrations/*.py
+
+# VSCode
+.vscode/
+
+# Frontend (Node/Expo/React Native)
+node_modules/
+frontend/node_modules/
+frontend/.expo/
+frontend/.expo-shared/
+frontend/web-build/
+frontend/dist/
+frontend/.env
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Docker
+postgres_data/
