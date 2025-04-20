@@ -13,7 +13,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "expo": "~44.0.0",
-    "expo-status-bar": "~1.1.0",
+    "expo-status-bar": "~1.2.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-native": "0.64.0",
@@ -22,9 +22,9 @@
     "react-navigation-stack": "^1.10.3"
   },
   "devDependencies": {
-    "jest": "^27.0.6",
     "babel-jest": "^27.0.6",
-    "babel-preset-expo": "~9.1.0"
+    "babel-preset-expo": "~9.1.0",
+    "jest": "^27.0.6"
   },
   "jest": {
     "preset": "jest-expo"

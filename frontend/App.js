@@ -1,9 +1,8 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import AppNavigator from './navigation/AppNavigator';
-import { TailwindProvider } from 'tailwindcss-react-native';
+import { TailwindProvider, useTailwind } from 'tailwindcss-react-native';
 import { TouchableOpacity, Text } from 'react-native';
-import { useTailwind } from 'tailwindcss-react-native';
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -40,7 +39,7 @@ export default function App() {
   );
 }
 
-export default function MyButton({ title, onPress }) {
+export function MyButton({ title, onPress }) {
   const tailwind = useTailwind();
   return (
     <TouchableOpacity

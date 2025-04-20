@@ -1,5 +1,4 @@
 version: '3.8'
-
 services:
   backend:
     build:
@@ -11,24 +10,22 @@ services:
       - "8000:8000"
     environment:
       - DJANGO_SETTINGS_MODULE=bayanai.settings
-      - DATABASE_URL=postgres://user:password@db:5432/e_stock
+      - DATABASE_URL=postgres://abdoulam:iohnrfiohcn74729299913@db:5432/e_stock
     depends_on:
       - db
-
   db:
     image: postgres:13
-    volumes:
+    volumes :
       - postgres_data:/var/lib/postgresql/data
     environment:
       - POSTGRES_DB=e_stock
-      - POSTGRES_USER=user
-      - POSTGRES_PASSWORD=password
-
+      - POSTGRES_USER=e-stock
+      - POSTGRES_PASSWORD=iohnrfiohcn74729299913
   frontend:
     build:
       context: ./frontend
       dockerfile: Dockerfile
-    volumes:
+    volumes:       
       - ./frontend:/app
     ports:
       - "3000:3000"
@@ -37,3 +34,6 @@ services:
 
 volumes:
   postgres_data:
+
+
+
